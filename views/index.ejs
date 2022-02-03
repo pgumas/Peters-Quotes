@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MY APP</title>
+</head>
+<body>
+  <h1> May Node and Express be with you. </h1>
+  <form action="/quotes" method="POST">
+    <input type="text" placeholder="name" name="name">
+    <input type="text" placeholder="quote" name="quote">
+    <button type="submit">Submit</button>
+  </form>
+  <h2> Quotes </h2>
+
+<ul class="quotes">
+  <% for(var i = 0; i < quotes.length; i++) {%>
+    <li class="quote">
+      <span><%= quotes[i].name %></span>:
+      <span><%= quotes[i].quote %></span>
+    </li>
+  <% } %>
+</ul>
+
+</div>
+<h2>Peter invades!</h2>
+<p>
+  I am your Peter
+</p>
+<button id="update-button">Replace Peter quote</button>
+</div>
+
+<div>
+  <h5>Remove Peter!</h5>
+  <p>
+    Delete one Peter quote. Does nothing if there are no more Darth
+    Vadar's quote
+  </p>
+  <button id="delete-button">Delete Peter quote</button>
+</div>
+<script src="/main.js"></script>
+</body>
+</html>
+
+
+
